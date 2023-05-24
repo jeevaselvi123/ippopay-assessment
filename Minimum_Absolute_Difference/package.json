@@ -1,0 +1,11 @@
+{
+  "name": "minimum-absolute-difference",
+  "version": "1.0.0",
+  "description": "Minimum Absolute Difference calculation",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Jeeva Dharani Kamaraj",
+  "license": "ISC"
+}
