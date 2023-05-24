@@ -1,0 +1,23 @@
+{
+  "name": "validation-api",
+  "version": "1.0.0",
+  "description": "REST API for validation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Jeeva Dharani Kamaraj",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
