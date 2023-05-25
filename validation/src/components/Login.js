@@ -57,28 +57,23 @@ export default function Login() {
       </header>
       <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
         {isValid ? (
-          <div className=" flex flex-row w-auto h-auto">
-            <h1 className="text-3xl font-semibold text-center text-blue-700 underline">
-              Validation Information
-            </h1>
-            <div className=" flex flex-row">
-              <button
-                onClick={handleBackButton}
-                className="items-start mr-2 px-4 py-2 text-white transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
-              >
-                Back
-              </button>
+          <div className=" flex flex-row">
+            <button
+              onClick={handleBackButton}
+              className="items-start mr-2 px-4 py-2 text-white transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            >
+              Back
+            </button>
 
-              {stepsNeeded > 0 ? (
-                <p className="mt-2">
-                  Total steps needed for valid password: {stepsNeeded}
-                </p>
-              ) : (
-                <p className="mt-2">
-                  Password is valid and Details are stored in Database!
-                </p>
-              )}
-            </div>
+            {stepsNeeded > 0 ? (
+              <p className="mt-2">
+                Total steps needed for valid password: {stepsNeeded}
+              </p>
+            ) : (
+              <p className="mt-2">
+                Password is valid and Details are stored in Database!
+              </p>
+            )}
           </div>
         ) : (
           <>
